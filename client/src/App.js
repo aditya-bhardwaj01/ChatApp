@@ -17,6 +17,10 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/chat" element={<ChatPage />} />
+          {/* <ProtectedRoute>
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/chat" element={<ChatPage />} />
+          </ProtectedRoute> */}
         </Routes>
       </Router>
     </div>
