@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
   // console.log('Connection established');
 
   socket.on('new-user-joined', (name) => {
-    // console.log("New user " + name);
+    console.log("New user " + name);
     users[socket.id] = name;
     // console.log(users)
     socket.broadcast.emit('user-joined', name);
